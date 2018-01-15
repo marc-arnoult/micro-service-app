@@ -1,0 +1,15 @@
+version: "3"
+services:
+  frontend:
+    build: ./frontend
+    image: frontend
+    ports: 
+      - 8080:80
+  user-service:
+    build: ./user-service
+    image: user-service
+    ports:
+      - 9000:80
+  todo-service:
+    build: ./todo-service
+    image: todo-service
