@@ -23,10 +23,10 @@
                     name: ''
                 },
                 created() {
-                    this.getUser();
+                    this.getUsername();
                 },
                 methods: {
-                    getUser() {
+                    getUsername() {
                         axios.get(URL + ':9000')
                         .then(({ data }) => {
                             data = JSON.parse(data)
